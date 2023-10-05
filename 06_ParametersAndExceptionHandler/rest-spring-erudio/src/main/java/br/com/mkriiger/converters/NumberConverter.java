@@ -1,6 +1,6 @@
-package br.com.mkriiger.utils;
+package br.com.mkriiger.converters;
 
-public class Util {
+public class NumberConverter {
 	
 	public static Double convertToDouble(String numberStr) {
 		if (numberStr == null) return 0D;
