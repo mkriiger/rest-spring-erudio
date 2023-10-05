@@ -66,9 +66,9 @@ public class MathController {
 		return convertToDouble(numberOne) / convertToDouble(numberTwo);
 	}
 	
-	@RequestMapping(value = "/avg/{numberOne}/{numberTwo}",
+	@RequestMapping(value = "/mean/{numberOne}/{numberTwo}",
 			method = RequestMethod.GET)
-	public Double avg(
+	public Double mean(
 			@PathVariable(value = "numberOne") String numberOne,
 			@PathVariable(value = "numberTwo") String numberTwo
 			) throws Exception {
@@ -79,9 +79,9 @@ public class MathController {
 		return (convertToDouble(numberOne) + convertToDouble(numberTwo)) / 2;
 	}
 	
-	@RequestMapping(value = "/sqrt/{numberOne}",
+	@RequestMapping(value = "/squareRoot/{numberOne}",
 			method = RequestMethod.GET)
-	public Double sqrt(
+	public Double squareRoot(
 			@PathVariable(value = "numberOne") String numberOne
 			) throws Exception {
 		
